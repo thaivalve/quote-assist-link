@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>ThaiValve Quote Assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family:sans-serif;text-align:center;padding-top:80px">
+<p>กำลังเข้าสู่ระบบ Quote Assistant...</p>
+<p id="fallback" style="display:none">
+  ถ้าไม่เด้งอัตโนมัติ <a id="link" href="#">กดที่นี่</a>
+</p>
+<script>
+  // URL ปลายทาง — สคริปต์ NAS จะมาแก้บรรทัดนี้อัตโนมัติเวลา tunnel เปลี่ยน
+  var TARGET = "https://wives-majority-roger-marshall.trycloudflare.com/app.html";
+
+  document.getElementById("link").href = TARGET;
+  document.getElementById("fallback").style.display = "block";
+  window.location.replace(TARGET);
+</script>
+</body>
+</html>
